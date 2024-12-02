@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 15px;
+    }
+    header {
+        font-size: 30px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    p {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    ol {
+        list-style-type: decimal;
+    }
+    li {
+        font-size: 15px;
+    }
+</style>
+<body>
+    <script>
+        let header = document.createElement('header');
+        header.textContent = "Spring Flowers in Indiana";
+        document.body.appendChild(header);
+
+        let paragraph = document.createElement('p');
+        paragraph.textContent = "From late March through May, spring wildflowers carpet the woodlands of Indiana State Parks properties. A walk can bring extraordinary joy as these sentinels of a new season bloom.";
+        document.body.appendChild(paragraph);
+
+        let ol = document.createElement('ol');
+
+        let flowers = [
+            "Prairie Trillium, which doesn't have a stalk.",
+            "Spring Larkspur, which can grow up to two feet tall.",
+            "Twin Leaf, which is sometimes confused with the leaf of bloodroot."
+        ];
+
+        flowers.forEach(flower => {
+            let li = document.createElement('li');
+            li.textContent = flower;
+            ol.appendChild(li);
+        });
+
+        document.body.appendChild(ol);
+    </script>
+</body>
+</html>
